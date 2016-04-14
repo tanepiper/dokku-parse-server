@@ -32,3 +32,12 @@ Now clone this directory and then type:
     > git push dokku master
 
 After a couple of minutes you will be able to access your parse instance via `http(s)://parse.my.dokku.me/parse`.
+
+
+## Bonus round: Lets Encrypt
+
+It's really easy to add SSL to your Parse server, just install the [Dokku LetsEncrypt plugin](https://github.com/dokku/dokku-letsencrypt)
+
+    > dokku plugin:install https://github.com/dokku/dokku-letsencrypt.git
+    > dokku config:set --no-restart myapp DOKKU_LETSENCRYPT_EMAIL=<EMAIL>
+    > dokku letsencrypt myapp
