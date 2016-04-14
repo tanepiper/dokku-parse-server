@@ -41,3 +41,8 @@ It's really easy to add SSL to your Parse server, just install the [Dokku LetsEn
     > dokku plugin:install https://github.com/dokku/dokku-letsencrypt.git
     > dokku config:set --no-restart myapp DOKKU_LETSENCRYPT_EMAIL=<EMAIL>
     > dokku letsencrypt myapp
+
+## Dokku on Digital Ocean
+
+If you don't have Dokku set up, it's really easy to do on [Digital Ocean](https://m.do.co/c/59b0919ef792) on one
+of their $5/m plans.  Instructions are [easy to follow](https://www.digitalocean.com/community/tutorials/how-to-use-the-digitalocean-dokku-application).
