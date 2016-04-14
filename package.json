@@ -1,0 +1,20 @@
+{
+  "name": "parse-app",
+  "version": "0.1.0",
+  "description": "This is a basic parse app.",
+  "keywords": [
+    "parse"
+  ],
+  "engines": {
+    "node": "4.1.x",
+    "npm": "3.7.x"
+  },
+  "dependencies": {
+    "express": "^4.13.4",
+    "mongodb-runner": "^3.2.1",
+    "parse-server": "^2.2.6"
+  },
+  "scripts": {
+    "start": "mongodb-runner && node index.js"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "parse-app",
+  "description": "This is a basic parse app.",
+  "keywords": [
+    "parse"
+  ],
+  "website": "https://github.com/tanepiper/dokku-parse-app",
+  "repository": "https://github.com/tanepiper/dokku-parse-app",
+  "logo": "",
+  "scripts": {
+    "postdeploy": "npm start"
+  },
+  "env": {
+    "APPLICATION_ID": {
+      "description": "An application ID",
+      "generator": "secret"
+    },
+    "MASTER_KEY": {
+      "description": "MASTER_KEY",
+      "generator": "secret"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "Performance-M"
+    }
+  },
+  "image": "gliderlabs/herokuish",
+  "addons": [
+    "mongodb"
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/stomita/heroku-buildpack-phantomjs"
+    }
+  ]
+}
