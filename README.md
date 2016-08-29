@@ -13,7 +13,7 @@ Once installed, you can create your app and database and link them:
 
     > dokku mongo:create parsedb
     > dokku apps:create parse
-    > dokku mongo:link parsedb:parse
+    > dokku mongo:link parsedb parse
 
 You will now have a `MONGO_URL` environment variable.  Set up other environment
 variables too:
